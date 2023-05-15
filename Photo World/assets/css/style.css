@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Oswald:wght@700&display=swap');
+:root{
+    --cor-primeria: rgb(144, 0, 196)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    width: calc(0.4vw + 0.2vh);
+    height: calc(0.4vw + 0.2vh);
+}
+  
+body::-webkit-scrollbar-track {
+    opacity: 0;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(139, 139, 139);
+    margin-right: calc(0.4vw + 0.2vh);
+    border-radius: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+#cabeca img{
+    margin: calc(1.5vw + 0.5vh);
+    width: calc(20vw + 9vh);
+}
+
+main{
+    margin: 0 calc(0.6vw + 0.3vh);
+}
+
+#corpo #galeria div{
+    display: flex;
+    overflow: auto;
+}
+
+div::-webkit-scrollbar {
+    height: calc(0.8vw + 0.4vh);
+}
+  
+div::-webkit-scrollbar-track {
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+}
+  
+div::-webkit-scrollbar-thumb {
+    background-color: var(--cor-primeria);
+    margin: calc(0.4vw + 0.2vh);
+    border-radius: 20px;
+}
+
+#corpo #galeria h4{
+    color: var(--cor-primeria);
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(3.5vw + 1vh);
+    margin: calc(2vw + 0.5vh) 0 calc(2vw + 0.5vh) calc(2vw + 0.5vh);
+}
+
+#corpo #galeria p{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(2.5vw + 1vh);
+    margin: calc(1vw + 0.5vh) 0 calc(1vw + 0.5vh) calc(3vw + 0.5vh);
+}
+
+#corpo #galeria div img{
+    width: calc(23vw + 12.5vh);
+    height: calc(11vw + 6.5vh);
+    margin: calc(1vw + 0.75vh);
+}
+
+#informacoes{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#informacoes h4{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: var(--cor-primeria);
+    font-size: calc(3.5vw + 1vh);
+    margin: calc(2vw + 0.5vh) 0;
+}
+
+#informacoes p{
+    width: 90vw;
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(1.2vw + 1.2vh);
+}
+
+#contato{
+    background-color: var(--cor-primeria);
+    margin: calc(2vw + 1vh) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: calc(5vw + 2vh) 0 calc(5vw + 2vh) 0;
+}
+
+#contato h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(5vw + 1vh);
+}
+
+#contato p{
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(2.5vw + 0.5vh);
+}
+
+#contato nav a img{
+    width: calc(2.5vw + 1vh);
+    margin: calc(0.9vw + 0.4vh);
+}
+
+#contato form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contato form input, #contato form textarea{
+    font-size: calc(2vw + 0.5vh);
+    margin: calc(0.8vw + 0.3vh) 0;
+    border: calc(0.2vw + 0.2vh) solid rgb(173, 173, 173) ;
+    padding: calc(0.8vw + 0.4vh);
+    width: 90vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grande{
+    height: calc(16vw + 7vh);   
+}
+
+.enviar{
+    cursor: pointer;
+    width: 30vw;
+    border-radius: 20px;
+}
+
+.enviar:hover{
+    background-color: rgb(111, 0, 152);
+    color: white;
+    border-color: rgb(87, 0, 121) !important;
+}
